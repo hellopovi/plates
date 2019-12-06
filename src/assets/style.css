@@ -1,0 +1,16 @@
+@font-face {
+  font-family: 'DIN';
+  src: url('din1451alt.ttf');
+  font-display: swap;
+}
+
+canvas {
+  border: 1px solid orange;
+  width: 500px;
+  height: 500px;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+}

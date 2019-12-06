@@ -1,0 +1,33 @@
+{
+  "name": "number-plates",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build-client": "webpack --config configs/webpack.config.js",
+    "build-client-es5": "webpack --config configs/webpack.config.es5.js",
+    "build": "npm run build-client -- && npm run build-client-es5 --",
+    "watch": "npm run build -- --watch",
+    "start": "webpack-dev-server",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "hellopovi",
+  "license": "ISC",
+  "eslintConfig": {
+    "env": {
+      "browser": true,
+      "node": true
+    }
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.1.2",
+    "@babel/core": "^7.1.2",
+    "@babel/polyfill": "^7.0.0",
+    "@babel/preset-env": "^7.1.0",
+    "babel-loader": "^8.0.4",
+    "webpack": "^4.24.0",
+    "webpack-cli": "^3.1.2",
+    "webpack-dev-server": "^3.1.10"
+  },
+  "dependencies": {}
+}

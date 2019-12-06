@@ -1,0 +1,36 @@
+<html>
+
+<head>
+  <title>Number Plate</title>
+  <meta charset="UTF-8" />
+  
+  <link rel="preload" href="src/assets/din1451alt.ttf" as="font" crossorigin="anonymous">
+  <link rel="stylesheet" href="src/assets/style.css">
+
+  <link rel="modulepreload" href="src/Utils.js">
+  <link rel="modulepreload" href="src/CanvasObject.js">
+  <link rel="modulepreload" href="src/NumberPlate.js">
+  <link rel="modulepreload" href="src/CanvasImage.js">
+  <link rel="modulepreload" href="src/index.js">
+
+  <script type="module" src="src/index.js"></script>
+
+  <!-- <script type="module" src="dist/app.js"></script> -->
+ <!--  <script nomodule src="dist/app.es5.js" defer></script> -->
+</head>
+
+<body>
+  <main>
+    <label for="plate-number">
+      Enter your number:
+      <input id="plate-number" type="text" />
+    </label>
+    <label for="image">
+      Background image:
+      <input id="image" accept="image/*" type="file" />
+    </label>
+    <canvas id="canvas" width="500" height="500"></canvas>
+  </main>
+</body>
+
+</html>
